@@ -8821,7 +8821,7 @@ void __io_uring_files_cancel(struct files_struct *files)
 	atomic_dec(&tctx->in_idle);
 
 	if (files)
-		io_uring_clean_tctx(tctx)
+		io_uring_clean_tctx(tctx);
 }
 
 static s64 tctx_inflight(struct io_uring_task *tctx)
