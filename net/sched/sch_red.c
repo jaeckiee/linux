@@ -242,6 +242,7 @@ static int __red_change(struct Qdisc *sch, struct nlattr **tb,
 	unsigned char flags;
 	int err;
 	u32 max_P;
+	u8 *stab;
 
 	if (tb[TCA_RED_PARMS] == NULL ||
 	    tb[TCA_RED_STAB] == NULL)
